@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Book the Place</title>
+</head>
+<body>
+<nav>
+  <img src="/img/image-myf.jpeg" alt="MYF" class="imgmyf" height="50px"  width="50px">
+  <i class="fa fa-home" aria-hidden="true"></i>
+</nav>
+<h2 style="text-align:center;">Book a place</h2>
+
+<form onsubmit="submitForm(event)">
+  <label for="name">name</label>
+  <input type="text" id="name" required>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" required>
+
+  <label for="people">Number of People:</label>
+  <input type="number" id="people" min="1" required>
+
+  <button type="submit">Book now</button>
+</form>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
